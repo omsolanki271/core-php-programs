@@ -6,7 +6,7 @@ $n = 153;
 //$n = 1634;
 //$n = 54748;
 $ans = 1;
-$res = $n; 
+$org = $n; 
 $rs =0 ;
 $len = (int)strlen((string)$n);
 
@@ -22,7 +22,7 @@ for($i =1 ;$i<=$len;$i++)
     $ans = 1;       
 }
 //echo $rs. "<br>";
-if($rs == $res)
+if($rs == $org)
 {
     echo $res . " is Armstrong Number ";
 }
