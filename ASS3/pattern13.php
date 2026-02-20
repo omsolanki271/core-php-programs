@@ -1,24 +1,19 @@
 <?php
 $n = 5;
-$start = 65;
+$start = 1;
 
 for ($i = 1; $i <= $n; $i++) {
 
-    for($j=1;$j<=$n-$i+1;$j++)
-        {
-            echo "&nbsp;&nbsp;&nbsp";
-        }
-    // increasing part
+   
     $num = $start;
     for ($j = 1; $j <= $i; $j++) {
-        echo chr($num);
+        echo $num;
         $num++;
     }
 
-    // decreasing part
     $num = $num - 2;
     for ($j = 1; $j <$i; $j++) {
-        echo chr($num);
+        echo $num;
         $num--;
     }
 
